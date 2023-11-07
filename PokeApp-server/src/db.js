@@ -3,8 +3,8 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
-const PokemonModel = require('./src/models/Pokemon.js');
-const TypeModel = require('./src/models/Type.js');
+const PokemonModel = require('./models/Pokemon.js');
+const TypeModel = require('./models/Type.js');
 
 const sequelize = new Sequelize(
    `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/pokemon`,
